@@ -1,19 +1,33 @@
 import React from "react";
 import moment from "moment";
 import Link from "next/link";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react/cjs/react.development";
 
 const PostCard = ({ post }) => {
-  console.log(post);
+  console.log("normal log");
+  useEffect(() => console.log("mounted"), []);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
+    <div
+      data-aos="fade-up"
+      className="shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8"
+    >
       <div className="relative overflow-hidden shadow-md pb-80 mb-6">
-        <img
-          src={post.featureImage.url}
-          alt={post.title}
-          className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-        />
+        <Link href={`/post/${post.slug}`}>
+          <img
+            src={post.featureImage.url}
+            alt={post.title}
+            className="object-top cursor-pointer absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+          />
+        </Link>
       </div>
-      <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
+      <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-2xl font-semibold">
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
       </h1>
       <div className="block lg:flex text-center items-center justify-center mb-8 w-full">

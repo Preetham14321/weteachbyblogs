@@ -20,9 +20,41 @@ const PostDetail = ({ post }) => {
     }
 
     switch (type) {
+      case "heading-one":
+        return (
+          <h1 key={index} className="text-4xl font-semibold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h1>
+        );
+      case "heading-two":
+        return (
+          <h1 key={index} className="text-3xl font-semibold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h1>
+        );
       case "heading-three":
         return (
+          <h3 key={index} className="text-2xl font-semibold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h3>
+        );
+      case "heading-four":
+        return (
           <h3 key={index} className="text-xl font-semibold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h3>
+        );
+      case "heading-five":
+        return (
+          <h3 key={index} className="text-lg font-semibold mb-4">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -35,6 +67,14 @@ const PostDetail = ({ post }) => {
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
           </p>
+        );
+      case "link":
+        return (
+          <a key={index} href={obj.href} className="text-md font-semibold ">
+            {obj.map((item, i) => {
+              <React.Fragment key={i}>{item}</React.Fragment>;
+            })}
+          </a>
         );
       case "heading-four":
         return (
@@ -100,10 +140,12 @@ const PostDetail = ({ post }) => {
           </div>
         </div>
         <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
+        {console.log(post.content.raw)}
         {post.content.raw.children.map((typeObj, index) => {
-          const children = typeObj.children.map((item, itemIndex) =>
-            getContentFragment(itemIndex, item.text, item)
+          const children = typeObj.children.map((item, itemindex) =>
+            getContentFragment(itemindex, item.text, item)
           );
+
           return getContentFragment(index, children, typeObj, typeObj.type);
         })}
       </div>

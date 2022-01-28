@@ -1,0 +1,497 @@
+/* ~~~~~~~~~ header Style ~~~~~~~~~~~ */
+
+.btn {
+  background-color: black;
+  text-align: center;
+}
+.nav__background {
+  background-color: rgb(253, 253, 252);
+  height: 15vh;
+  /* box-shadow: 0px 0px 15px rgb(128, 128, 128); */
+}
+.drop-arrow {
+  position: relative;
+  left: 9em;
+  top: 0.7em;
+}
+
+@media (max-width: 1000px) {
+  .headerBar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(220, 197, 223, 0.151);
+    text-align: center;
+    flex-direction: column-reverse;
+    box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.274);
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+
+  .topic {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.logo {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  width: 100%;
+  letter-spacing: 0.5em;
+  letter-spacing: 0;
+  padding: 0.25em 0 0 0.32em;
+  display: block;
+  margin: 0 auto;
+  color: rgba(177, 23, 95, 0.25);
+  text-shadow: 0 0 80px rgba(212, 184, 184, 1);
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  /* -webkit-transform: translate(0, 0, 0); */
+  /* transform: translate(0, 0, 0); */
+  /* -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
+  animation: altf 80s linear infinite;
+}
+@keyframes altf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 15px rgb(128, 128, 128);
+}
+
+/* ~~~~~~~~~~~~~~ Footer Style ~~~~~~~~~~~ */
+.description {
+  margin-left: 1em;
+}
+
+.footer {
+  background-color: #263238;
+  /* width: 100%; */
+  /* margin-left: -2em;
+  margin-right: 1em; */
+}
+
+/* ~~~~~~~~~~~~~~ Footer social Media ~~~~~~~~~~~~~ */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.wrapper .icon {
+  position: relative;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.wrapper .icon a {
+  /* color: #fff; */
+  transition: 0.4s linear;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #111;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon::before,
+.wrapper .icon ::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.4s linear;
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover a,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(0.8);
+  transition: 0.4s linear;
+}
+.icon1 :hover {
+  color: rgb(59, 47, 192);
+}
+.icon2 :hover {
+  color: rgb(31, 101, 192);
+}
+.icon3 :hover {
+  background: linear-gradient(red, blue);
+}
+.icon4 :hover {
+  color: rgb(185, 64, 8);
+}
+.wrapper .icon:hover::before {
+  border-radius: 50%;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(20deg);
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .divider {
+    position: absolute;
+    margin-top: 15em;
+    width: 700px;
+    height: 2em;
+  }
+  .quickLink {
+    text-align: center;
+    position: relative;
+    top: 16em;
+    right: 16em;
+  }
+  .copyright {
+    position: relative;
+    left: 15em;
+    top: 2em;
+    width: 36vw;
+    margin-bottom: 2em;
+  }
+  .email,
+  .phone {
+    width: 33rem;
+    margin-bottom: 3em;
+  }
+}
+@media (min-width: 1024px) {
+  .divider {
+    margin-top: 15em;
+    width: 950px;
+  }
+  .quickLink {
+    text-align: center;
+    position: relative;
+    top: 15.5em;
+    right: 22em;
+  }
+  .copyright {
+    position: relative;
+    left: 18em;
+    top: 2.5em;
+    width: 36vw;
+    margin-bottom: 2em;
+  }
+  .email,
+  .phone {
+    width: 33rem;
+    margin-bottom: 3em;
+  }
+}
+
+/* ~~~~~~~~~~~ Login Style ~~~~~~~~~~ */
+/* .login_body {
+  background-color: #080710;
+  width: 100vw;
+  height: 102.2vh;
+  margin-bottom: -2em;
+  margin-top: -13em;
+} */
+.background {
+  width: 520px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.background .shape {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+.background .shape:first-child {
+  background-image: linear-gradient(
+    (63.1deg, rgb(6, 30, 151) 16.4%, rgba(24, 95, 240, 1) 64.5%)
+  );
+  left: 0px;
+  top: -100px;
+}
+.background .shape:last-child {
+  background-image: linear-gradient(
+    68.3deg,
+    rgba(245, 177, 97, 1) 0.4%,
+    rgb(236, 54, 54) 100.2%
+  );
+  right: 20px;
+  bottom: -100px;
+}
+.background .shape:first-child {
+  background-image: linear-gradient(
+    63.1deg,
+    rgb(6, 30, 151) 16.4%,
+    rgba(24, 95, 240, 1) 64.5%
+  );
+  left: 20px;
+  top: -100px;
+}
+form {
+  /* height: 520px; */
+  width: 400px;
+  background-color: rgba(100, 91, 91, 0.178);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+.labels {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact_sub,
+.textareas {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(29, 26, 26, 0.151);
+
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #0e0606;
+}
+
+.login {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #3454acb2;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login:hover {
+  background-color: rgba(38, 82, 177, 0.822);
+}
+.social {
+  margin-top: 38px;
+  display: flex;
+}
+
+.login_btn {
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: #3454acb2;
+  /* background-color: rgba(11, 17, 51, 0.993); */
+  /* color: #eaf0fb; */
+  text-align: center;
+}
+.forgot_btn2 {
+  width: 153px;
+}
+.social div:hover {
+  /* background-color: rgba(255, 255, 255, 0.47); */
+  background-color: rgba(29, 26, 26, 0.178);
+}
+.social .fb {
+  margin-left: 25px;
+}
+.social a {
+  text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .background {
+    width: 100vw;
+  }
+  form {
+    height: 520px;
+    width: 300px;
+  }
+}
+.login_warn {
+  height: 0vh;
+
+  margin: auto -24px;
+}
+
+/* @media (min-width: 1280px) {
+  body {
+    background-color: red;
+  }
+} */
+
+/* ~~~~~~~~~~ Sign Up Form ~~~~~~~~~~~~ */
+
+.form2 {
+  /* height: 800px; */
+  top: 70%;
+}
+.background2 {
+  width: 520px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.background2 .shape {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+.background2 .shape:first-child {
+  background-image: linear-gradient(
+    (63.1deg, rgb(6, 30, 151) 16.4%, rgba(24, 95, 240, 1) 64.5%)
+  );
+  left: 0px;
+  top: -100px;
+}
+.background2 .shape:last-child {
+  background-image: linear-gradient(
+    68.3deg,
+    rgba(245, 177, 97, 1) 0.4%,
+    rgb(236, 54, 54) 100.2%
+  );
+  right: -20px;
+  bottom: -360px;
+}
+.background2 .shape:first-child {
+  background-image: linear-gradient(
+    63.1deg,
+    rgb(6, 30, 151) 16.4%,
+    rgba(24, 95, 240, 1) 64.5%
+  );
+  left: 20px;
+  top: -100px;
+}
+@media (max-width: 450px) {
+  .background2 {
+    width: 100vw;
+    height: 55vh;
+  }
+  .form2 {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* ~~~~~~~~~~ Privacy Policy Page & terms and conditions ~~~~~~~~~~~ */
+
+.heading {
+  font-size: 2.1em;
+  font-weight: bolder;
+  line-height: 2.2em;
+}
+.heading2 {
+  font-size: 2.1em;
+  font-weight: bolder;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* ~~~~~~~~~~~~ contact-us Page ~~~~~~~~~~~~~~ */
+.reach {
+  font-size: 25px;
+  width: 40vw;
+}
+.c-icon {
+  margin: 0 auto;
+  font-size: 30px;
+}
+.bc-color {
+  background-color: #263238;
+}
+@media (min-width: 1024px) {
+  .contact-col {
+    top: -36em;
+    position: relative;
+  }
+  .contact-follow {
+    position: relative;
+    margin-bottom: -32em;
+    top: -33em;
+  }
+}
+@media (min-width: 768px) {
+  .contact_add {
+    position: relative;
+    bottom: 36em;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-box {
+    height: 376px;
+    width: 1200px;
+    margin-bottom: 4em;
+  }
+}
+
+/* Not found Page */
+
+/* .notfound {
+}
+.notfound-404 {
+  font-size: 6em;
+  font-weight: 1000;
+} */
