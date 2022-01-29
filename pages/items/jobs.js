@@ -12,7 +12,7 @@ import ChemicalJobs from "../../Components/StudentCorner/ChemicalJobs";
 import CommerceJobs from "../../Components/StudentCorner/CommerceJobs";
 import AutomobileJobs from "../../Components/StudentCorner/AutomobileJobs";
 
-const jobs = () => {
+const Jobs = () => {
   const [branchName, setBranchName] = useState("");
   const [search, setSearch] = useState(false);
   const [error, setError] = useState(false);
@@ -158,4 +158,4 @@ Engineering"
   );
 };
 
-export default jobs;
+export default Jobs;

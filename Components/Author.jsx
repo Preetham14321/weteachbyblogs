@@ -16,9 +16,8 @@ const Author = ({ author }) => {
       data-aos-duration="3000"
     >
       <div className="absolute left-0 right-0 -top-14">
-        <Image
+        <img
           src={author.photo.url}
-          unoptimized
           alt={author.name}
           height="100px"
           width="100px"

@@ -11,7 +11,7 @@ const Terms = () => {
         ! <br />
         <br />
         These terms and conditions outline the rules and regulations for the use
-        of <span className="text-sm font-semibold">WETEACHBYBLOGS</span>'s
+        of <span className="text-sm font-semibold">WETEACHBYBLOGS</span>&apos;s
         Website, located at{" "}
         <a href="https://weteachbyblogs.org" className="text-blue-500">
           https://weteachbyblogs.org
@@ -26,19 +26,20 @@ const Terms = () => {
         <br />
         <span className="text-sm font-semibold">WETEACHBYBLOGS</span> The
         following terminology applies to these Terms and Conditions, Privacy
-        Statement and Disclaimer Notice and all Agreements: "Client", "You" and
-        "Your" refers to you, the person log on this website and compliant to
-        the Company’s terms and conditions. "The Company", "Ourselves", "We",
-        "Our" and "Us", refers to our Company. "Party", "Parties", or "Us",
-        refers to both the Client and ourselves. All terms refer to the offer,
-        acceptance and consideration of payment necessary to undertake the
-        process of our assistance to the Client in the most appropriate manner
-        for the express purpose of meeting the Client’s needs in respect of
-        provision of the Company’s stated services, in accordance with and
-        subject to, prevailing law of Netherlands. Any use of the above
-        terminology or other words in the singular, plural, capitalization
-        and/or he/she or they, are taken as interchangeable and therefore as
-        referring to same. <br />
+        Statement and Disclaimer Notice and all Agreements: &quot;Client&quot;,
+        &quot;You&quot; and &quot;Your&quot; refers to you, the person log on
+        this website and compliant to the Company&apos;s terms and conditions.
+        &quot;The Company&quot;, &quot;Ourselves&quot;, &quot;We&quot;,
+        &quot;Our&quot; and &quot;Us&quot;, refers to our Company.
+        &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to
+        both the Client and ourselves. All terms refer to the offer, acceptance
+        and consideration of payment necessary to undertake the process of our
+        assistance to the Client in the most appropriate manner for the express
+        purpose of meeting the Client&apos;s needs in respect of provision of
+        the Company&apos;s stated services, in accordance with and subject to,
+        prevailing law of Netherlands. Any use of the above terminology or other
+        words in the singular, plural, capitalization and/or he/she or they, are
+        taken as interchangeable and therefore as referring to same. <br />
         <br />
         <b>Cookies</b> <br />
         <br />
@@ -47,10 +48,10 @@ const Terms = () => {
           https://weteachbyblogs.org
         </a>
         , you agreed to use cookies in agreement with the{" "}
-        <span className="text-sm font-semibold">WETEACHBYBLOGS</span>'s Privacy
-        Policy. <br />
+        <span className="text-sm font-semibold">WETEACHBYBLOGS</span>&apos;s
+        Privacy Policy. <br />
         <br />
-        Most interactive websites use cookies to let us retrieve the user’s
+        Most interactive websites use cookies to let us retrieve the user&apos;s
         details for each visit. Cookies are used by our website to enable the
         functionality of certain areas to make it easier for people visiting our
         website. Some of our affiliate/advertising partners may also use
@@ -156,7 +157,7 @@ const Terms = () => {
         other Website information so long as the link: (a) is not in any way
         deceptive; (b) does not falsely imply sponsorship, endorsement or
         approval of the linking party and its products and/or services; and (c)
-        fits within the context of the linking party’s site. <br />
+        fits within the context of the linking party&apos;s site. <br />
         <br />
         We may consider and approve other link requests from the following types
         of organizations: <br />
@@ -182,8 +183,8 @@ const Terms = () => {
         These organizations may link to our home page so long as the link: (a)
         is not in any way deceptive; (b) does not falsely imply sponsorship,
         endorsement or approval of the linking party and its products or
-        services; and (c) fits within the context of the linking party’s site.{" "}
-        <br />
+        services; and (c) fits within the context of the linking party&apos;s
+        site. <br />
         <br />
         If you are one of the organizations listed in paragraph 2 above and are
         interested in linking to our website, you must inform us by sending an
@@ -201,13 +202,13 @@ const Terms = () => {
           ▪ By use of the uniform resource locator being linked to; or <br />▪
           By use of any other description of our Website being linked to that
           makes sense within the context and format of content on the linking
-          party’s site.
+          party&apos;s site.
         </div>{" "}
         <br />
         No use of
-        <span className="text-sm font-semibold">WETEACHBYBLOGS</span>'s logo or
-        other artwork will be allowed for linking absent a trademark license
-        agreement. <br />
+        <span className="text-sm font-semibold">WETEACHBYBLOGS</span>&apos;s
+        logo or other artwork will be allowed for linking absent a trademark
+        license agreement. <br />
         <br />
         <b>iFrames</b> <br />
         <br />
@@ -227,7 +228,7 @@ const Terms = () => {
         <b> Your Privacy</b> <br />
         <br />
         Please read{" "}
-        <Link href="/privacy">
+        <Link passHref href="/privacy">
           <span className="text-blue-500 font-semibold">Privacy Policy</span>
         </Link>{" "}
         <br />
@@ -237,7 +238,7 @@ const Terms = () => {
         We reserve the right to request that you remove all links or any
         particular link to our Website. You approve to immediately remove all
         links to our Website upon request. We also reserve the right to amen
-        these terms and conditions and it’s linking policy at any time. By
+        these terms and conditions and it&apos;s linking policy at any time. By
         continuously linking to our Website, you agree to be bound to and follow
         these linking terms and conditions. <br />
         <br />

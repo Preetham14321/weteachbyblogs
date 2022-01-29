@@ -86,12 +86,12 @@ const Footer = () => {
             </div>
             <div className="lg:ml-10 mr-3 xl:ml-18">
               <h1 className="font-semibold mb-2 ml-1 flex">Site Links</h1>
-              <Link href="/privacy">
+              <Link passHref href="/privacy">
                 <span className="flex text-gray-400 text-sm ml-1 hover:text-white cursor-pointer">
                   Privacy Policy
                 </span>
               </Link>
-              <Link href="/terms&conditions">
+              <Link passHref href="/terms&conditions">
                 <span className="flex text-gray-400 text-sm  hover:text-white cursor-pointer">
                   Terms&Condition
                 </span>
@@ -100,14 +100,14 @@ const Footer = () => {
           </div>
           <hr className="divider xl:w-10/12" />
           <div className="text-center quickLink xl:mr-24 xl:pr-10 text-gray-400 ">
-            <Link href="/" className="hover:text-white">
+            <Link passHref href="/" className="hover:text-white">
               <span className="hover:text-white cursor-pointer">Home</span>
             </Link>
-            <Link href="/items/donate">
+            <Link passHref href="/items/donate">
               <span className="hover:text-white cursor-pointer">| Donate</span>
             </Link>
 
-            <Link href="/items/contact-us">
+            <Link passHref href="/items/contact-us">
               <span className="hover:text-white cursor-pointer">| Contact</span>
             </Link>
           </div>

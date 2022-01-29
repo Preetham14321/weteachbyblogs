@@ -1,9 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 import moment from "moment";
 import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react/cjs/react.development";
+
 
 const PostCard = ({ post }) => {
   console.log("normal log");
@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
       className="shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8"
     >
       <div className="relative overflow-hidden shadow-md pb-80 mb-6">
-        <Link href={`/post/${post.slug}`}>
+        <Link passHref href={`/post/${post.slug}`}>
           <img
             src={post.featureImage.url}
             alt={post.title}
@@ -65,7 +65,7 @@ const PostCard = ({ post }) => {
         {post.excert}
       </p>
       <div className="text-center">
-        <Link href={`/post/${post.slug}`}>
+        <Link passHref href={`/post/${post.slug}`}>
           <span className="transition duration-500 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
             Continue Reading
           </span>

@@ -30,7 +30,7 @@ const InternshipCard = ({ jobtitle, location, ctc, href }) => {
           {`₹ ${ctc}`}
         </h1>
         <hr data-aos="fade-up" />
-        <a href={href} target="_blank">
+        <a href={href} rel="noreferrer" target="_blank">
           <button className="bg-indigo-500 bg-opacity-40 block m-auto mt-3 w-32 text-lg font-semibold rounded-lg">
             Apply Now
           </button>

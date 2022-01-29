@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import StdDry from "../../Components/StdDry";
 
-const scholarships = () => {
+const Scholarships = () => {
   const [classesName, setClassesName] = useState("");
   const [genderName, setGenderName] = useState("");
   const [countryName, setCountryName] = useState("");
@@ -949,4 +949,4 @@ const scholarships = () => {
   );
 };
 
-export default scholarships;
+export default Scholarships;

@@ -12,7 +12,7 @@ import ChemicalIntern from "../../Components/StudentCorner/ChemicalIntern";
 import CommerceIntern from "../../Components/StudentCorner/CommerceIntern";
 import AgricultureIntern from "../../Components/StudentCorner/AgricultureIntern";
 
-const internships = () => {
+const Internships = () => {
   const [branchName, setBranchName] = useState("");
   const [search, setSearch] = useState(false);
 
@@ -135,4 +135,4 @@ Engineering"
   );
 };
 
-export default internships;
+export default Internships;

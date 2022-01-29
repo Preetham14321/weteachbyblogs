@@ -12,23 +12,23 @@ const Categories = () => {
     <div className="shadow-lg rounded-lg p-8 mb-8 pb-12 ">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">Categories</h3>
       {categories.map((category) => (
-        <Link key={category.slug} href={`/category/${category.slug}`}>
+        <Link passHref key={category.slug} href={`/category/${category.slug}`}>
           <span className="cursor-pointer text-slate-500 hover:text-indigo-900 block font-semibold pb-3 mb-3">
             {category.name}
           </span>
         </Link>
       ))}
-      <Link key="jobs" href="/items/jobs">
+      <Link passHref key="jobs" href="/items/jobs">
         <span className="cursor-pointer text-slate-500 hover:text-indigo-900 block font-semibold pb-3 mb-3">
           Jobs
         </span>
       </Link>
-      <Link key="scholarship" href="/items/scholarships">
+      <Link passHref key="scholarship" href="/items/scholarships">
         <span className="cursor-pointer text-slate-500 hover:text-indigo-900 block font-semibold pb-3 mb-3">
           Scholarships
         </span>
       </Link>
-      <Link key="intern" href="/items/internships">
+      <Link passHref key="intern" href="/items/internships">
         <span className="cursor-pointer text-slate-500 hover:text-indigo-900 block font-semibold pb-3 mb-3">
           Internships
         </span>

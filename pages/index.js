@@ -3,7 +3,6 @@ import { PostCard, Categories, PostWidget, Intro } from "../Components";
 import { getPosts } from "../services";
 import { FeaturedPosts } from "../sections";
 import Footer from "../Components/Footer";
-import Link from "next/link";
 
 export default function Home({ posts }) {
   console.log(`this is the post data ${posts.JSON}`);

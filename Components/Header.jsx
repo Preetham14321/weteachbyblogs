@@ -35,14 +35,6 @@ const Header = ({}) => {
   }, []);
 
   useEffect(() => {
-    return () => {
-      router.pathname === "/category/[slug]"
-        ? setSpinner(false)
-        : setSpinner(true);
-    };
-  }, []);
-
-  useEffect(() => {
     if (typeof window !== "undefined") {
       // localStorage.setItem(1, email);
       console.log("this is from " + localStorage.length > 0);
@@ -109,7 +101,7 @@ const Header = ({}) => {
     >
       <div className=" w-full inline-block  py-8">
         <div className="md:float-left block">
-          <Link href="/">
+          <Link passHref href="/">
             <h1 className=" font-bold cursor-pointer logo">
               wE teach by Blogs
             </h1>
@@ -151,7 +143,7 @@ const Header = ({}) => {
           {showAccount && (
             <>
               <div className="bg-gray-500 h-20 w-40 m-auto flex flex-col lg:top-10 lg:absolute lg:right-1 lg:opacity-70 lg:text-white lg:w-28  xl:w-32">
-                <Link key="login" href="/login">
+                <Link passHref key="login" href="/login">
                   <span
                     className="md: mt-2 align-middle hover:text-indigo-900      ml-4 lg:ml-0 font-semibold cursor-pointer"
                     onClick={() => {
@@ -163,7 +155,7 @@ const Header = ({}) => {
                   </span>
                 </Link>
                 <hr />
-                <Link key="signup" href="/signup">
+                <Link passHref key="signup" href="/signup">
                   <span
                     className=" lg:float-none m  mt-2 align-middle hover:text-indigo-900 lg:ml-0  ml-4 font-semibold cursor-pointer"
                     onClick={() => {
@@ -180,7 +172,7 @@ const Header = ({}) => {
           {console.log(showLogout + "value")}
           {showLogout ? (
             <div className="bg-gray-500 h-19 w-40 m-auto flex flex-col lg:top-10 lg:absolute lg:right-1 lg:opacity-70 lg:text-white lg:w-28  xl:w-32">
-              <Link key="login" href="/login">
+              <Link passHref key="login" href="/login">
                 <span
                   className="md: mt-2 align-middle hover:text-indigo-900      ml-4 lg:ml-0 font-semibold cursor-pointer"
                   onClick={() => {
@@ -213,7 +205,7 @@ const Header = ({}) => {
           {showAbout && (
             <>
               <div className="bg-gray-500 h-20 w-40 m-auto flex flex-col lg:top-10 lg:absolute lg:right-16 lg:opacity-70 lg:text-white lg:w-32">
-                <Link key="about" href="/about">
+                <Link passHref key="about" href="/about">
                   <span
                     className="  md:float-right  mt-2 align-middle hover:text-indigo-900   ml-4 font-semibold lg:ml-0 cursor-pointer"
                     onClick={() => {
@@ -226,7 +218,7 @@ const Header = ({}) => {
                   </span>
                 </Link>
                 <hr />
-                <Link key="contact" href="/items/contact-us">
+                <Link passHref key="contact" href="/items/contact-us">
                   <span
                     className="md:float-right  mt-2 align-middle hover:text-indigo-900 lg:ml-0   ml-4 font-semibold cursor-pointer"
                     onClick={() => {
@@ -249,7 +241,11 @@ const Header = ({}) => {
 
           <div className=" md:float-left md:contents">
             {categories.map((category) => (
-              <Link key={category.slug} href={`/category/${category.slug}`}>
+              <Link
+                passHref
+                key={category.slug}
+                href={`/category/${category.slug}`}
+              >
                 <span
                   className="md:float-right  topic  mt-2 align-middle hover:text-indigo-900   ml-4 font-semibold cursor-pointer"
                   onClick={() => {
@@ -267,7 +263,7 @@ const Header = ({}) => {
           {/* ~~~~~~~~~~~~~ Student Corner ~~~~~~~~~~ */}
           {showContent && (
             <div className="bg-gray-500 h-32 w-40 m-auto flex flex-col lg:top-10 lg:absolute lg:left-16 lg:ml-3 lg:opacity-70 lg:text-white lg:w-28  xl:w-32">
-              <Link key="scholarship" href="/items/scholarships">
+              <Link passHref key="scholarship" href="/items/scholarships">
                 <span
                   className="md: mt-2 align-middle hover:text-indigo-900      ml-4 lg:ml-0 font-semibold cursor-pointer"
                   onClick={() => {
@@ -279,7 +275,7 @@ const Header = ({}) => {
                 </span>
               </Link>
               <hr />
-              <Link key="jobs" href="/items/jobs">
+              <Link passHref key="jobs" href="/items/jobs">
                 <span
                   className="md: mt-2 align-middle hover:text-indigo-900      ml-4 lg:ml-0 font-semibold cursor-pointer"
                   onClick={() => {
@@ -291,7 +287,7 @@ const Header = ({}) => {
                 </span>
               </Link>
               <hr />
-              <Link key="login" href="/items/internships">
+              <Link passHref key="login" href="/items/internships">
                 <span
                   className="md: mt-2 align-middle hover:text-indigo-900      ml-4 lg:ml-0 font-semibold cursor-pointer"
                   onClick={() => {
@@ -320,7 +316,7 @@ const Header = ({}) => {
             </div>
           )} */}
 
-          <Link key="home" href="/">
+          <Link passHref key="home" href="/">
             <span
               className="md:float-right mt-2  mr-2 align-left   hover:text-indigo-900 font-semibold cursor-pointer "
               onClick={() => {

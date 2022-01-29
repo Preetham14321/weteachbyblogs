@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Axios from "axios";
 import Head from "next/head";
 
-const index = () => {
+const SignUp = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -62,9 +62,9 @@ const index = () => {
   return (
     <>
       <div>
-        <head>
+        <Head>
           <title>SignUp Page - weteachbyblogs</title>
-        </head>
+        </Head>
         <div className="login_body">
           <div className="background2">
             <div className="shape xl:mt-10"></div>
@@ -169,7 +169,7 @@ const index = () => {
           mobileNumber.length > 6 &&
           mobileNumber.length < 16 &&
           password.length > 7 ? (
-            <Link href="/login">
+            <Link passHref href="/login">
               <button className="login" value="signup" onClick={submitHandler}>
                 {buttonValue}
               </button>
@@ -184,7 +184,7 @@ const index = () => {
           )}
 
           <div className="float-right  text-blue-500  hover:text-blue-900   mt-2">
-            <Link href="/login">
+            <Link passHref href="/login">
               <button className="font-semibold hover:font-bold  ">
                 Already have Account Login?
               </button>
@@ -204,4 +204,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default SignUp;

@@ -18,8 +18,7 @@ const FeaturedPostCard = ({ post }) => (
         {post.title}
       </p>
       <div className="flex items-center absolute bottom-5 w-full justify-center">
-        <Image
-          unoptimized
+        <img
           alt={post.author.name}
           height="30px"
           width="30px"
@@ -31,7 +30,7 @@ const FeaturedPostCard = ({ post }) => (
         </p>
       </div>
     </div>
-    <Link href={`/post/${post.slug}`}>
+    <Link passHref href={`/post/${post.slug}`}>
       <span className="cursor-pointer absolute w-full h-full" />
     </Link>
   </div>

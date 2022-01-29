@@ -6,7 +6,7 @@ import Head from "next/head";
 // import { BsGoogle } from "react-icons/bs";
 // import { BsFacebook } from "react-icons/bs";
 
-const index = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState(false);
@@ -65,9 +65,9 @@ const index = () => {
   return (
     <>
       <div>
-        <head>
+        <Head>
           <title>Login Page - weteachbyblogs</title>
-        </head>
+        </Head>
         <div className="login_body">
           <div className="background">
             <div className="shape"></div>
@@ -123,11 +123,11 @@ const index = () => {
           )}
 
           {refresh && email.length > 0 && password.length > 0 ? (
-            <a href="/">
+            <Link passHref href="/">
               <button className="login mb-2" onClick={submitHandler}>
                 {loginVar}
               </button>
-            </a>
+            </Link>
           ) : (
             <button
               className="login bg-red-700 bg-opacity-50 hover:bg-red-500 "
@@ -164,4 +164,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Login;

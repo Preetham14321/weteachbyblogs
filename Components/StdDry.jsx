@@ -14,8 +14,8 @@ const StdDry = ({ href, onClick }) => {
         data-aos-duration="1000"
       >
         <h1 className="font-semibold text-md text-gray-100 mb-4">
-          " We Have Found Best Scholarships For Best Person Click Down to Check
-          "
+          &quot; We Have Found Best Scholarships For Best Person Click Down to
+          Check &quot;
         </h1>
         <a href={href}>
           <button

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import moment from "moment";
 import Link from "next/link";
+import Image from "next/image";
 
 import { getRecentPosts, getSimilarPosts } from "../services";
 
@@ -17,7 +18,7 @@ const PostWidget = ({ categories, slug }) => {
         setRelatedPosts(result);
       });
     }
-  }, [slug]);
+  }, [slug, categories]);
 
   console.log(relatedPosts);
 

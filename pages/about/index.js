@@ -2,7 +2,7 @@ import React from "react";
 import { Footer } from "../../Components";
 import Head from "next/head";
 
-const index = () => {
+const AboutUs = () => {
   return (
     <div>
       <Head>
@@ -16,7 +16,7 @@ const index = () => {
           <h1 className="text-xl text-gray-700 mt-10 mb-3 font-semibold">
             Who we Are
           </h1>
-          <p className="">
+          <p>
             <span className="font-semibold ">Weteachbyblogs</span> is one of the
             top Platform which helps Students, Jobseekers and Freshers. The main
             Goal of Platform is to Provide Hybrid solution for all things like
@@ -32,14 +32,14 @@ const index = () => {
           </h1>
           <p className="">
             We Are the Group of People who Try To solve Challenges in Easy Way.
-            And we try Our Best to do the same with others , As per we know{" "}
-            <b>"In this World Every Problem has the solution"</b>, In similar
-            way we Choose Strong Problems and we try to find Strong solution
-            with competative to it. We Hire intellectual and Smart Peoples who
-            converts our vision into Possibilities. We help Learner in order to
-            solve their Queries and We Help Jobseekers by Providing Best
-            Opportunity which are exist in <b> "Tech World"</b>, As well as we
-            help Students by Providing Best Scholarships which they can Apply.
+            And we try Our Best to do the same with others , As per we know In
+            this World Every Problem has the solution, In similar way we Choose
+            Strong Problems and we try to find Strong solution with competative
+            to it. We Hire intellectual and Smart Peoples who converts our
+            vision into Possibilities. We help Learner in order to solve their
+            Queries and We Help Jobseekers by Providing Best Opportunity which
+            are exist in Tech World, As well as we help Students by Providing
+            Best Scholarships which they can Apply.
           </p>
         </div>
         <div className="bg-blue-500 p-10 drop-shadow-lg bg-opacity-30 md:mb-16">
@@ -66,4 +66,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default AboutUs;

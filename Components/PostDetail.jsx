@@ -68,14 +68,7 @@ const PostDetail = ({ post }) => {
             ))}
           </p>
         );
-      case "link":
-        return (
-          <a key={index} href={obj.href} className="text-md font-semibold ">
-            {obj.map((item, i) => {
-              <React.Fragment key={i}>{item}</React.Fragment>;
-            })}
-          </a>
-        );
+
       case "heading-four":
         return (
           <h4 key={index} className="text-md font-semibold mb-4">

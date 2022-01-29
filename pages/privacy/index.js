@@ -50,7 +50,7 @@ const privacy = () => {
           <br />
           <b>How we use your information</b> <br />
           <br />
-          We use the information we collect in various ways, including to:{" "}
+          We use the information we collect in various ways, including to:
           <br />
           <br />
           <div className="leading-6 ml-3 ">
@@ -72,24 +72,27 @@ const privacy = () => {
           </span>{" "}
           follows a standard procedure of using log files. These files log
           visitors when they visit websites. All hosting companies do this and a
-          part of hosting services' analytics. The information collected by log
-          files include internet protocol (IP) addresses, browser type, Internet
-          Service Provider (ISP), date and time stamp, referring/exit pages, and
-          possibly the number of clicks. These are not linked to any information
-          that is personally identifiable. The purpose of the information is for
-          analyzing trends, administering the site, tracking users' movement on
-          the website, and gathering demographic information. <br />
+          part of hosting services &apos; analytics. The information collected
+          by log files include internet protocol (IP) addresses, browser type,
+          Internet Service Provider (ISP), date and time stamp, referring/exit
+          pages, and possibly the number of clicks. These are not linked to any
+          information that is personally identifiable. The purpose of the
+          information is for analyzing trends, administering the site, tracking
+          users &apos; movement on the website, and gathering demographic
+          information. <br />
           <br /> <b>Cookies and Web Beacons</b> <br />
-          <br /> Like any other website,{" "}
+          <br /> Like any other website,
           <span className="text-sm font-semibold">WETEACHBYBLOGS </span>
-          uses 'cookies'. These cookies are used to store information including
-          visitors' preferences, and the pages on the website that the visitor
-          accessed or visited. The information is used to optimize the users'
-          experience by customizing our web page content based on visitors'
-          browser type and/or other information. <br />
+          uses &apos; cookies &apos;. These cookies are used to store
+          information including visitors &apos; preferences, and the pages on
+          the website that the visitor accessed or visited. The information is
+          used to optimize the users &apos; experience by customizing our web
+          page content based on visitors &apos; browser type and/or other
+          information.
           <br />
-          For more general information on cookies, please read "What Are
-          Cookies". <br />
+          <br />
+          For more general information on cookies, please read &quot;What Are
+          Cookies &quot;. <br />
           <br /> <b>Google DoubleClick DART Cookie</b> <br />
           <br />
           Google is one of a third-party vendor on our site. It also uses
@@ -97,7 +100,7 @@ const privacy = () => {
           based upon their visit to www.website.com and other sites on the
           internet. However, visitors may choose to decline the use of DART
           cookies by visiting the Google ad and content network Privacy Policy
-          at the following URL – https://policies.google.com/ <br />{" "}
+          at the following URL &ndash; https://policies.google.com/ <br />
           technologies/ads <br />
           <br />
           <b>Our Advertising Partners</b> <br />
@@ -105,12 +108,12 @@ const privacy = () => {
           Some of advertisers on our site may use cookies and web beacons. Our
           advertising partners are listed below. Each of our advertising
           partners has their own Privacy Policy for their policies on user data.
-          For easier access, we hyperlinked to their Privacy Policies below.{" "}
+          For easier access, we hyperlinked to their Privacy Policies below.
           <br />
           <br />
           <div className="ml-3">
             ▪ Google https://policies.google.com/ <br /> technologies/ads
-          </div>{" "}
+          </div>
           <br />
           <b>Advertising Partners Privacy Policies</b> <br />
           <br />
@@ -121,11 +124,11 @@ const privacy = () => {
           JavaScript, or Web Beacons that are used in their respective
           advertisements and links that appear on{" "}
           <span className="text-sm font-semibold">WETEACHBYBLOGS </span> which
-          are sent directly to users' browser. They automatically receive your
-          IP address when this occurs. These technologies are used to measure
-          the effectiveness of their advertising campaigns and/or to personalize
-          the advertising content that you see on websites that you visit.{" "}
-          <br />
+          are sent directly to users&apos; browser. They automatically receive
+          your IP address when this occurs. These technologies are used to
+          measure the effectiveness of their advertising campaigns and/or to
+          personalize the advertising content that you see on websites that you
+          visit. <br />
           <br />
           Note that
           <span className="text-sm font-semibold">WETEACHBYBLOGS </span> has no
@@ -133,7 +136,7 @@ const privacy = () => {
           advertisers. <br />
           <br /> <b>Third Party Privacy Policies</b> <br />
           <br />
-          <span className="text-sm font-semibold">WETEACHBYBLOGS</span>'s
+          <span className="text-sm font-semibold">WETEACHBYBLOGS</span>&apos;s
           Privacy Policy does not apply to other advertisers or websites. Thus,
           we are advising you to consult the respective Privacy Policies of
           these third-party ad servers for more detailed information. It may
@@ -142,7 +145,7 @@ const privacy = () => {
           <br />
           You can choose to disable cookies through your individual browser
           options. To know more detailed information about cookie management
-          with specific web browsers, it can be found at the browsers'
+          with specific web browsers, it can be found at the browsers&apos;
           respective websites. <br />
           <br />{" "}
           <b>CCPA Privacy Rights (Do Not Sell My Personal Information)</b>{" "}
@@ -150,15 +153,15 @@ const privacy = () => {
           <br /> Under the CCPA, among other rights, California consumers have
           the right to: <br />
           <br />
-          Request that a business that collects a consumer's personal data
+          Request that a business that collects a consumer&apos;s personal data
           disclose the categories and specific pieces of personal data that a
           business has collected about consumers. <br />
           <br />
           Request that a business delete any personal data about the consumer
           that a business has collected. <br />
           <br />
-          Request that a business that sells a consumer's personal data, not
-          sell the consumer's personal data. <br />
+          Request that a business that sells a consumer&apos;s personal data,
+          not sell the consumer&apos;s personal data. <br />
           <br />
           If you make a request, we have one month to respond to you. If you
           would like to exercise any of these rights, please contact us. <br />
@@ -168,31 +171,33 @@ const privacy = () => {
           We would like to make sure you are fully aware of all of your data
           protection rights. Every user is entitled to the following: <br />
           <br />
-          The right to access – You have the right to request copies of your
-          personal data. We may charge you a small fee for this service. <br />
+          The right to access &ndash; You have the right to request copies of
+          your personal data. We may charge you a small fee for this service.{" "}
           <br />
-          The right to rectification – You have the right to request that we
-          correct any information you believe is inaccurate. You also have the
-          right to request that we complete the information you believe is
+          <br />
+          The right to rectification &ndash; You have the right to request that
+          we correct any information you believe is inaccurate. You also have
+          the right to request that we complete the information you believe is
           incomplete. <br />
           <br />
-          The right to erasure – You have the right to request that we erase
-          your personal data, under certain conditions. <br />
-          br The right to restrict processing – You have the right to request
-          that we restrict the processing of your personal data, under certain
-          conditions. <br />
+          The right to erasure &ndash; You have the right to request that we
+          erase your personal data, under certain conditions. <br />
+          br The right to restrict processing &ndash; You have the right to
+          request that we restrict the processing of your personal data, under
+          certain conditions. <br />
           <br />
-          The right to object to processing – You have the right to object to
-          our processing of your personal data, under certain conditions. <br />
+          The right to object to processing &ndash; You have the right to object
+          to our processing of your personal data, under certain conditions.{" "}
           <br />
-          The right to data portability – You have the right to request that we
-          transfer the data that we have collected to another organization, or
-          directly to you, under certain conditions. <br />
+          <br />
+          The right to data portability &ndash; You have the right to request
+          that we transfer the data that we have collected to another
+          organization, or directly to you, under certain conditions. <br />
           <br />
           If you make a request, we have one month to respond to you. If you
           would like to exercise any of these rights, please contact us. <br />
           <br />
-          <b>Children's Information</b> <br />
+          <b>Children&apos;s Information</b> <br />
           <br />
           Another part of our priority is adding protection for children while
           using the internet. We encourage parents and guardians to observe,

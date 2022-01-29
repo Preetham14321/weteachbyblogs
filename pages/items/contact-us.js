@@ -90,7 +90,7 @@ const Contact = () => {
             type="text"
             value={subject}
             placeholder="Your Subject *"
-            className="mb-5 xl:mb-6 contact_sub  xl:w-2/5 xl:w-2/5 md:w-80 px-2"
+            className="mb-5 xl:mb-6 contact_sub   xl:w-2/5 md:w-80 px-2"
             onChange={(e) => {
               setSubject(e.target.value);
             }}
@@ -186,7 +186,7 @@ const Contact = () => {
         <div className="bg-slate-800 bg-opacity-70 flex justify-center  items-center fixed top-0 right-0 bottom-0 left-0   ">
           <div className="bg-white opacity-85  px-16 py-14 rounded-md text-center ">
             <span className="text-xl float-right font-semibold mt-3 mb-6 opacity-100 text-indigo-900 md:px-1">
-              "Thanks For Feedback.. <br /> We will get back Soon"
+              Thanks For Feedback.. <br /> We will get back Soon
             </span>
           </div>
         </div>

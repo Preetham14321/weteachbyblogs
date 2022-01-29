@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <head>
+      <Head>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-      </head>
+      </Head>
       <Layout>
         {loading && <Loader />}
         <Component {...pageProps} />;
