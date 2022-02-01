@@ -7,6 +7,7 @@ const mysql = require("mysql");
 
 const db = mysql.createConnection({
   host: "weteachbyblogsdb.chrpmome0sw2.ap-south-1.rds.amazonaws.com",
+  port: "3306",
   user: "root",
   password: "123456789",
   database: "weteachbyblogs"
