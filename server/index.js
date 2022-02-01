@@ -6,7 +6,7 @@ const app = express();
 const mysql = require("mysql");
 
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "weteachbyblogsdb.chrpmome0sw2.ap-south-1.rds.amazonaws.com",
   user: "root",
   password: "123456789",
   database: "weteachbyblogs"

@@ -33,7 +33,7 @@ const Login = () => {
     localStorage.setItem(1, email);
     console.log("second" + refresh);
     console.log(e);
-    Axios.post("http://localhost:3001/api/login", {
+    Axios.post("http://weteachbyblogsdb.chrpmome0sw2.ap-south-1.rds.amazonaws.com:3001/api/login", {
       email: email,
       password: password
     }).then((response) => {

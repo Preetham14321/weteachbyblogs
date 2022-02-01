@@ -22,7 +22,7 @@ const Contact = () => {
   console.log(name, email, subject, message);
   const submitHandler = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:3001/api/contact", {
+    Axios.post("http://weteachbyblogsdb.chrpmome0sw2.ap-south-1.rds.amazonaws.com:3001/api/contact", {
       name: name,
       email: email,
       subject: subject,

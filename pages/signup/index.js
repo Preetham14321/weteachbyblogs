@@ -29,7 +29,7 @@ const SignUp = () => {
     console.log("this is came form ref" + name);
     name = " ";
 
-    Axios.post("http://localhost:3001/api/signup", {
+    Axios.post("http://weteachbyblogsdb.chrpmome0sw2.ap-south-1.rds.amazonaws.com:3001/api/signup", {
       fullName: fullName,
       email: email,
       mobileNumber: mobileNumber,
