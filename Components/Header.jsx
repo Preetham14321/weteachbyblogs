@@ -140,68 +140,6 @@ const Header = ({}) => {
           data-aos="fade-in-up"
           data-aos-duration="2000"
         >
-          {showAccount && (
-            <>
-              <div className="bg-gray-500 h-20 w-40 m-auto flex flex-col lg:top-10 lg:absolute lg:right-1 lg:opacity-70 lg:text-white lg:w-28  xl:w-32">
-                <Link passHref key="login" href="/login">
-                  <span
-                    className="md: mt-2 align-middle hover:text-indigo-900      ml-4 lg:ml-0 font-semibold cursor-pointer"
-                    onClick={() => {
-                      setShowMenu(false);
-                      setShowAccount(false);
-                    }}
-                  >
-                    Login
-                  </span>
-                </Link>
-                <hr />
-                <Link passHref key="signup" href="/signup">
-                  <span
-                    className=" lg:float-none m  mt-2 align-middle hover:text-indigo-900 lg:ml-0  ml-4 font-semibold cursor-pointer"
-                    onClick={() => {
-                      setShowMenu(false);
-                      setShowAccount(false);
-                    }}
-                  >
-                    Signup
-                  </span>
-                </Link>
-              </div>
-            </>
-          )}
-          {console.log(showLogout + "value")}
-          {showLogout ? (
-            <div className="bg-gray-500 h-19 w-40 m-auto flex flex-col lg:top-10 lg:absolute lg:right-1 lg:opacity-70 lg:text-white lg:w-28  xl:w-32">
-              <Link passHref key="login" href="/login">
-                <span
-                  className="md: mt-2 align-middle hover:text-indigo-900      ml-4 lg:ml-0 font-semibold cursor-pointer"
-                  onClick={() => {
-                    setShowMenu(false);
-                    setShowAccount(false);
-                    // setShowLogout(false);
-                    if (typeof window !== "undefined") {
-                      localStorage.clear();
-                      if (localStorage.length < 1) {
-                        setShowLogout(false);
-                      }
-                    }
-                  }}
-                >
-                  Logout
-                </span>
-              </Link>
-            </div>
-          ) : (
-            ""
-          )}
-
-          <button
-            className="dropbtn md:float-right  mt-2 align-middle hover:text-indigo-900    ml-4 font-semibold cursor-pointer"
-            onClick={showAccountHandler}
-          >
-            Account{" "}
-          </button>
-
           {showAbout && (
             <>
               <div className="bg-gray-500 h-20 w-40 m-auto flex flex-col lg:top-10 lg:absolute lg:right-16 lg:opacity-70 lg:text-white lg:w-32">
