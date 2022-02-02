@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Image from "next/image";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +14,7 @@ const Author = ({ author }) => {
       data-aos="fade-down"
       data-aos-duration="3000"
     >
-      <div className="absolute left-0 right-0 -top-14">
+      <div className="absolute left-10 right-0 -top-14">
         <img
           src={author.photo.url}
           alt={author.name}
