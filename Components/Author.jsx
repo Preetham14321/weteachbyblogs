@@ -14,16 +14,16 @@ const Author = ({ author }) => {
       data-aos="fade-down"
       data-aos-duration="3000"
     >
-      <div className="absolute left-10 right-0 -top-14">
+      <div className=" relative bottom-24  ">
         <img
           src={author.photo.url}
           alt={author.name}
           height="100px"
           width="100px"
-          className="align-middle rounded-full"
+          className="align-middle mx-auto  rounded-full"
         />
       </div>
-      <h3 className=" my-4 text-xl font-bold">{author.name}</h3>
+      <h3 className=" my-4  -mt-14 text-xl font-bold">{author.name}</h3>
       <p className="text-lg"> {author.bio}</p>
     </div>
   );

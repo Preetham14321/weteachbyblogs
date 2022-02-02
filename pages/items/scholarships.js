@@ -57,7 +57,7 @@ const Scholarships = () => {
         data-aos="fade-up"
       >
         <h1 className="bg-gradient-to-r from-blue-500 to-sky-300 m-4 px-4 rounded-lg h-10 pt-2 font-semibold  text-center mb-4 text-xl xl:w-2/4 xl:block xl:m-auto xl:h-14 xl:pt-4 xl:mb-6 ">
-          Search Scholarships Heresss
+          Search Scholarships Here
         </h1>
         <input
           list="std-classes"
