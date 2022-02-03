@@ -5,8 +5,6 @@ import { FeaturedPosts } from "../sections";
 import Footer from "../Components/Footer";
 
 export default function Home({ posts }) {
-  console.log(`this is the post data ${posts.JSON}`);
-
   return (
     <>
       <div className="container mx-auto  mb-8">

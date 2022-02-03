@@ -21,14 +21,9 @@ const Header = ({}) => {
   const [showContent, setShowContent] = useState(false);
   const [spinner, setSpinner] = useState(false);
 
-  // console.log();
   const router = useRouter();
 
-  console.log(router.pathname);
-
   // Adding the Spinner to page
-
-  // console.log("this is from " + localStorage.length > 0);
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -37,14 +32,11 @@ const Header = ({}) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       // localStorage.setItem(1, email);
-      console.log("this is from " + localStorage.length > 0);
-      console.log(localStorage.getItem(1));
       // localStorage.clear();
       // if (localStorage.length > 0) {
       //   setShowLogout(!showLogout);
       //   setShowAccount(false);
       //   // setShowLogout(true);
-      //   console.log(localStorage.length > 0);
       // }
       // if (localStorage.length > 0) {
       //   setShowAccount(false);
@@ -72,7 +64,6 @@ const Header = ({}) => {
     // if (router.pathname === "/" && localStorage.length > 1) {
     //   setShowLogout(!showLogout);
     // }
-    console.log(localStorage.length);
     (router.pathname === "/" && localStorage.length < 1) ||
     localStorage.length > 1
       ? setShowLogout(!showLogout)

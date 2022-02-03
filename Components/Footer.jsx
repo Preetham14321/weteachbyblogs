@@ -14,7 +14,7 @@ const Footer = () => {
             <h1 className="font-bold mb-2  ml-3">WE TEACH BY BLOGS</h1>
             <div className="description ">
               <p className="text-sm mb-4 text-gray-400">
-                A Best Place Where Knowledge And Opprtunities are Exist
+                A Best Place Where Knowledge And Opprtunities Exist
               </p>
 
               <span className="text-sm mb-3 text-gray-400">🌍 Hyderabad</span>

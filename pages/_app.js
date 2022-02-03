@@ -11,11 +11,9 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
   Router.events.on("routeChangeStart", (url) => {
-    console.log("router Changing the url");
     setLoading(true);
   });
   Router.events.on("routeChangeComplete", (url) => {
-    console.log("router Changed the url");
     setLoading(false);
   });
 

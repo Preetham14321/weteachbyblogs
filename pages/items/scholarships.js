@@ -11,11 +11,6 @@ const Scholarships = () => {
   const [countryName, setCountryName] = useState("");
   const [search, setSearch] = useState(false);
   const [error, setError] = useState(false);
-  console.log(search);
-  console.log(classesName.length);
-  console.log(classesName);
-  console.log(genderName);
-  console.log(countryName);
 
   useEffect(() => {
     const options = {

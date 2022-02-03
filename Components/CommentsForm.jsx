@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { submitComment } from "../services";
+import { submitComment } from "../public/commentapi";
 
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
@@ -59,11 +59,7 @@ const CommentsForm = ({ slug }) => {
 
   return (
     <>
-      <div
-        className="shadow-lg rounded-lg p-8 pb-12 mb-8"
-        data-aos="fade-up"
-        // data-aos-duration="3000"
-      >
+      <div className="shadow-lg rounded-lg p-8 pb-12 mb-8" data-aos="fade-up">
         <h3 className="text-xl mb-8 text-center font-semibold border-b pb-4">
           Want To Say Something
         </h3>

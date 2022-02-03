@@ -1,14 +1,10 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import moment from "moment";
 import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const PostCard = ({ post }) => {
-  console.log("normal log");
-  useEffect(() => console.log("mounted"), []);
-
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);

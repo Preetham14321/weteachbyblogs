@@ -7,7 +7,6 @@ const Author = ({ author }) => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
-  console.log(author);
   return (
     <div
       className="text-center mt-20 mb-8 p-12 relative rounded-lg shadow-lg bg-black bg-opacity-5"

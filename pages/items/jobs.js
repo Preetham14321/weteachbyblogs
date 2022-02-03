@@ -16,7 +16,6 @@ const Jobs = () => {
   const [branchName, setBranchName] = useState("");
   const [search, setSearch] = useState(false);
   const [error, setError] = useState(false);
-  console.log(branchName);
 
   const searchHandler = () => {
     setSearch(true);
