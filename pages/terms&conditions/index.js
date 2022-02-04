@@ -13,8 +13,8 @@ const Terms = () => {
         These terms and conditions outline the rules and regulations for the use
         of <span className="text-sm font-semibold">WETEACHBYBLOGS</span>&apos;s
         Website, located at{" "}
-        <a href="https://weteachbyblogs.org" className="text-blue-500">
-          https://weteachbyblogs.org
+        <a href="https://weteachbyblogs.com" className="text-blue-500">
+          https://weteachbyblogs.com
         </a>
         . <br />
         <br />
@@ -44,8 +44,8 @@ const Terms = () => {
         <b>Cookies</b> <br />
         <br />
         We employ the use of cookies. By accessing{" "}
-        <a href="https://weteachbyblogs.org" className="text-blue-500">
-          https://weteachbyblogs.org
+        <a href="https://weteachbyblogs.com" className="text-blue-500">
+          https://weteachbyblogs.com
         </a>
         , you agreed to use cookies in agreement with the{" "}
         <span className="text-sm font-semibold">WETEACHBYBLOGS</span>&apos;s
@@ -61,13 +61,13 @@ const Terms = () => {
         <br /> Unless otherwise stated,{" "}
         <span className="text-sm font-semibold">WETEACHBYBLOGS</span> and/or its
         licensors own the intellectual property rights for all material on{" "}
-        <a href="https://weteachbyblogs.org" className="text-blue-500">
-          https://weteachbyblogs.org
+        <a href="https://weteachbyblogs.com" className="text-blue-500">
+          https://weteachbyblogs.com
         </a>
         . All intellectual property rights are reserved. You may access this
         from{" "}
-        <a href="https://weteachbyblogs.org" className="text-blue-500">
-          https://weteachbyblogs.org
+        <a href="https://weteachbyblogs.com" className="text-blue-500">
+          https://weteachbyblogs.com
         </a>{" "}
         for your own personal use subjected to restrictions set in these terms
         and conditions. <br />
@@ -76,20 +76,20 @@ const Terms = () => {
         <br />
         <div className="leading-6 ml-3 ">
           ▪ Republish material from{" "}
-          <a href="https://weteachbyblogs.org" className="text-blue-500">
-            https://weteachbyblogs.org
+          <a href="https://weteachbyblogs.com" className="text-blue-500">
+            https://weteachbyblogs.com
           </a>{" "}
           <br />▪ Sell, rent or sub-license material from{" "}
-          <a href="https://weteachbyblogs.org" className="text-blue-500">
-            https://weteachbyblogs.org
+          <a href="https://weteachbyblogs.com" className="text-blue-500">
+            https://weteachbyblogs.com
           </a>{" "}
           <br />▪ Reproduce, duplicate or copy material from{" "}
-          <a href="https://weteachbyblogs.org" className="text-blue-500">
-            https://weteachbyblogs.org
+          <a href="https://weteachbyblogs.com" className="text-blue-500">
+            https://weteachbyblogs.com
           </a>{" "}
           <br />▪ Redistribute content from{" "}
-          <a href="https://weteachbyblogs.org" className="text-blue-500">
-            https://weteachbyblogs.org
+          <a href="https://weteachbyblogs.com" className="text-blue-500">
+            https://weteachbyblogs.com
           </a>{" "}
           <br />{" "}
         </div>{" "}

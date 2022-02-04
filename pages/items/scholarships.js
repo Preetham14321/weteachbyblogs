@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import StdDry from "../../Components/StdDry";
+import { NextSeo } from "next-seo";
 
 const Scholarships = () => {
   const [classesName, setClassesName] = useState("");
@@ -33,8 +34,22 @@ const Scholarships = () => {
     setError(true);
   };
 
+  const SEO = {
+    title: "Scholarships | WeteachbyBlogs",
+    description:
+      "A Best Place To Find All Suitable Scholarships According to Your Current Standard.",
+
+    openGraph: {
+      title: "Scholarships | WeteachbyBlogs",
+      description:
+        "A Best Place To Find All Suitable Scholarships According to Your Current Standard."
+    }
+  };
+
   return (
     <div>
+      <NextSeo {...SEO} />
+
       <div
         className="bg-gradient-to-r from-purple-500 to-pink-300 pb-10 pt-20  h-  relative bottom-8  px-2 container"
         data-aos="fade-down"

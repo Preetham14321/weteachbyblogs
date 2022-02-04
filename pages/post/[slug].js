@@ -11,8 +11,19 @@ import {
   Footer
 } from "../../Components";
 import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
 
 const PostDetails = ({ post }) => {
+  const SEO = {
+    title: `WeteachbyBlogs | ${post.title}`,
+    description: post.excert,
+
+    openGraph: {
+      title: `WeteachbyBlogs | ${post.title}`,
+      description: post.excert
+    }
+  };
+
   const router = useRouter();
 
   if (router.isFallback) {
@@ -20,6 +31,7 @@ const PostDetails = ({ post }) => {
   }
   return (
     <React.Fragment>
+      <NextSeo {...SEO} />
       <div className="container mx-auto px-10 mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">

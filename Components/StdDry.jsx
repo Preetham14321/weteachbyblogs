@@ -17,7 +17,7 @@ const StdDry = ({ href, onClick }) => {
           &quot; We Have Found Best Scholarships For Best Person Click Down to
           Check &quot;
         </h1>
-        <a href={href}>
+        <a href={href} rel="noreferrer" target="_blank">
           <button
             className="bg-gradient-to-r from-sky-600 to-sky-300 block m-auto mt-2 w-32 text-lg font-semibold rounded-lg "
             onClick={onClick}

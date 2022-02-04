@@ -1,15 +1,24 @@
 import React from "react";
 import { Footer } from "../../Components";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 const AboutUs = () => {
+  const SEO = {
+    title: "About Us - WeteachbyBlogs",
+    description:
+      "Weteachbyblogs is one of the top Platform which helps Students, Jobseekers and Freshers. The main Goal of Platform is to Provide Hybrid solution for all things like Programming , Programming Queries, Ethical Hacking, Technology, About Jobs, Scholarships, Internships, And Daily IT News Updates Etc.",
+
+    openGraph: {
+      title: "About Us - WeteachbyBlogs",
+      description:
+        "Weteachbyblogs is one of the top Platform which helps Students, Jobseekers and Freshers. The main Goal of Platform is to Provide Hybrid solution for all things like Programming , Programming Queries, Ethical Hacking, Technology, About Jobs, Scholarships, Internships, And Daily IT News Updates Etc."
+    }
+  };
+
   return (
     <div>
-      <Head>
-        <title>About Us - WeteachbyBlogs</title>
-        <meta name="description" content="About at WeteachbyBlogs" />
-        <meta property="og:title" content="About us - WeteachbyBlogs" />
-      </Head>
+      <NextSeo {...SEO} />
+
       <div className="px-4 xl:px-8 mb-5">
         <h1 className="text-5xl font-bold ">About</h1>
         <div className="bg-blue-300 mt-10 p-10 drop-shadow-xl bg-opacity-20">

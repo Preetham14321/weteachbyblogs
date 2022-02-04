@@ -8,13 +8,27 @@ import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
+import { NextSeo } from "next-seo";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Contact = () => {
+  const SEO = {
+    title: "Contact Us - WeteachbyBlogs",
+    description:
+      "We will Feel Happy if you Reach us , and  We are Always open to hear your Queries and Give the Best Solutions ASP.",
+
+    openGraph: {
+      title: "Contact Us - WeteachbyBlogs",
+      description:
+        "We will Feel Happy if you Reach us , and  We are Always open to hear your Queries and Give the Best Solutions ASP."
+    }
+  };
+
   return (
     <>
+      <NextSeo {...SEO} />
       <div className="mb-4 lg:px-20 xl:px-40 px-6 ">
         <form
           action="https://formspree.io/f/xdoykbva"

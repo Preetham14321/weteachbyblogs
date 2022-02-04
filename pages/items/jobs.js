@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../../Components/Footer";
+import { NextSeo } from "next-seo";
+import Head from "next/head";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -24,8 +26,28 @@ const Jobs = () => {
     setError(true);
   };
 
+  const SEO = {
+    title: "Jobs | WeteachbyBlogs",
+    description:
+      "One Stop To Find All Suitable Jobs According to Your Desired Profession and Skills.",
+
+    openGraph: {
+      title: "Jobs | WeteachbyBlogs",
+      description:
+        "One Stop To Find All Suitable Jobs According to Your Desired Profession and Skills."
+    }
+  };
+
   return (
     <div>
+      <Head>
+        <meta
+          name="keywords"
+          content="JobsForbtech,JobsComputerscience,Jobs,JobChange"
+        />
+      </Head>
+      <NextSeo {...SEO} />
+
       <div
         className="bg-gradient-to-r from-sky-400 to-indigo-200 pb-10 pt-20   relative bottom-8  px-2 container"
         data-aos="fade-down"

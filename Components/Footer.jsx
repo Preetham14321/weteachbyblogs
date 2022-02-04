@@ -112,7 +112,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="text-sm text-center copyright xl:ml-16 xl:mb-11 xl:mt-1   text-gray-400">
+          <div className="text-sm text-center copyright xl:ml-16 xl:mb-11 xl:mt-5   text-gray-400">
             {" "}
             © weteachbyblogs All Rights Reserved
           </div>

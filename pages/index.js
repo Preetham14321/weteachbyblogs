@@ -9,18 +9,6 @@ export default function Home({ posts }) {
     <>
       <div className="container mx-auto  mb-8">
         <Head>
-          <title>We Teach By Blogs</title>
-          <meta
-            name="description"
-            content="Weteachbyblogs is one of the
-            top Platform which helps Students, Jobseekers and Freshers. The main
-            Goal of Platform is to Provide Hybrid solution for all things like
-            Programming Languages, Programming Queries, Ethical Hacking,
-            Technology, About Jobs, Scholarships, Internships, And Daily IT News
-            Updates Etc... We strongly believe that insted of Speaking about
-            something we show it in the Results."
-          />
-          <meta property="og:title" content="WeteachbyBlogs" />
           <meta name="theme-color" content="#395dff" />
           <link
             rel="apple-touch-icon"

@@ -9,8 +9,8 @@ const privacy = () => {
         <div className=" ">
           At <span className="text-sm font-semibold">WETEACHBYBLOGS</span> ,
           accessible from{" "}
-          <a href="https://weteachbyblogs.org" className="text-blue-500">
-            https://weteachbyblogs.org
+          <a href="https://weteachbyblogs.com" className="text-blue-500">
+            https://weteachbyblogs.com
           </a>
           , one of our main priorities is the privacy of our visitors. This
           Privacy Policy document contains types of information that is

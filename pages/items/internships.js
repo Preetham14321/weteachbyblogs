@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Head from "next/head";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "../../Components/Footer";
@@ -12,6 +13,8 @@ import ChemicalIntern from "../../Components/StudentCorner/ChemicalIntern";
 import CommerceIntern from "../../Components/StudentCorner/CommerceIntern";
 import AgricultureIntern from "../../Components/StudentCorner/AgricultureIntern";
 
+import { NextSeo } from "next-seo";
+
 const Internships = () => {
   const [branchName, setBranchName] = useState("");
   const [search, setSearch] = useState(false);
@@ -22,8 +25,27 @@ const Internships = () => {
   const searchHandler2 = () => {
     setError(true);
   };
+
+  const SEO = {
+    title: "Internships | WeteachbyBlogs",
+    description: "Top Matching Internships For Your Proficient Skills.",
+
+    openGraph: {
+      title: "Internships | WeteachbyBlogs",
+      description: "Top Matching Internships For Your Proficient Skills."
+    }
+  };
+
   return (
     <div>
+      <Head>
+        <meta
+          name="keywords"
+          content="InternshipsForbtech,InternshipComputerscience,Internships"
+        />
+      </Head>
+
+      <NextSeo {...SEO} />
       <div
         className="bg-gradient-to-r from-indigo-400 to-blue-300 pb-10 pt-20   relative bottom-8  px-2 container"
         data-aos="fade-down"
