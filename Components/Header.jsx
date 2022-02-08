@@ -98,13 +98,7 @@ const Header = ({}) => {
             </h1>
           </Link>
         </div>
-        {/* {spinner && !(router.pathname === "/category/[slug]") ? (
-          <p className="text-6xl bg-sky-400 bg-opacity-50 left-96 ml-80 absolute top-80 text-center text-red-900">
-            Loading...
-          </p>
-        ) : (
-          ""
-        )} */}
+
         {showMenu ? (
           <HiX
             data-aos="flip-left"

@@ -1,4 +1,4 @@
 User-agent : *
 Allow : /
 
-Sitemap : https://weteachbyblogs.com/api/my-sitemap
+Sitemap: https://weteachbyblogs.com/api/my-sitemap

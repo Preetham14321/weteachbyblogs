@@ -18,16 +18,17 @@ export default async (req, res) => {
   ];
 
   // Create a stream to write to
-  const stream = new SitemapStream({ hostname: `https://${req.headers.host}` });
+  const stream = new SitemapStream({
+    hostname: `https://${req.headers.host}`
+  });
 
   res.writeHead(200, {
     "Content-Type": "application/xml"
   });
 
-  // Return a promise that resolves with your XML string
-
   const xmlString = await streamToPromise(
     Readable.from(links).pipe(stream)
   ).then((data) => data.toString());
+
   res.end(xmlString);
 };

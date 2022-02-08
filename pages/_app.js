@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Loader } from "../Components";
 import Router from "next/router";
+import { useEffect } from "react";
+import Script from "next/script";
+import { useRouter } from "next/router";
+import * as gtag from "../lib/gtag";
 
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
@@ -19,6 +23,18 @@ function MyApp({ Component, pageProps }) {
   Router.events.on("routeChangeComplete", (url) => {
     setLoading(false);
   });
+
+  //google analytics
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
@@ -48,6 +64,25 @@ function MyApp({ Component, pageProps }) {
           content="Programming,Technology,Scholarships,Jobs,Internships,JobFinder,InternshipFinder, ScholarshipForClass8,ScholarshipsForClassbelow10 , ScholarshipForClassabove10,intermediateScholarships"
         />
       </Head>
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${gtag.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `
+        }}
+      />
       <Layout>
         <DefaultSeo {...SEO} />
         {loading && <Loader />}
